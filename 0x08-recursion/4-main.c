@@ -19,7 +19,7 @@ printf("%d\n", r);
 r = _pow_recursion(5, 2);
 printf("%d\n", r);
 r = _pow_recursion(5, -2);
-rintf("%d\n", r);
+printf("%d\n", r);
 r = _pow_recursion(-5, 3);
 printf("%d\n", r);
 return (0);
