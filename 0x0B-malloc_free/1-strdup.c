@@ -18,11 +18,11 @@ int i, r = 0;
 i = 0;
 if (str == NULL)
 return (NULL);
+while (str[i] != '\0')
+i++;
 aaa = (char *)malloc(sizeof(char) * (i + 1));
 if (aaa == NULL)
 return (NULL);
-while (str[i] != '\0')
-i++;
 for (r = 0; str[r]; r++)
 aaa[r] = str[r];
 return (aaa);
