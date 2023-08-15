@@ -4,7 +4,8 @@
 
 /**
  * free_dog - Sets the dogs free
- * @d: for the dogs to be free
+ * @d: For the dogs to be free
+ * Return: 0
  */
 
 void free_dog(dog_t *d)
@@ -12,7 +13,6 @@ void free_dog(dog_t *d)
 if (d == NULL)
 return;
 free(d->name);
-free(d->age);
 free(d->owner);
 free(d);
 }
