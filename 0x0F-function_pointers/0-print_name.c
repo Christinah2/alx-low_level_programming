@@ -3,15 +3,17 @@
 #include <stdlib.h>
 
 /**
- * print_name - print name using pointer to funtionction
+ * print_name - print name using pointer to function
  * @name: The name
- * @f: A pointer to a function
+ * @f: The function
  * Return: Nothing
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-if (name == NULL || f == NULL)
+if (name == NULL)
+return;
+if (f == NULL)
 return;
 f(name);
 }
